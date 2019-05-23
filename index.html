@@ -1,34 +1,136 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+<title>first web design</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {background-color: powderblue;}
-h1   {color: black;}
-p    {color: black;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
 </style>
-</head>
 <body>
-<!-- Images of Me -->
-  <div class="w3-row-padding w3-padding-16" id="about">
-    <div class="w3-col m6">
-      <img src="uq_pic.jpg" alt="Me" style="width:100%">
-    </div>
-    <div class="w3-col m6">
-      <img src="UNE.jpg" alt="Me" style="width:100%">
-    </div>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-lime w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Me</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Current Projects</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Presentation slides</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
   </div>
 
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4><b>About Me</b></h4>
-    <p>I am a quantitative geneticist, with special interest in the development of statistical models that efficiently utilise omics data in the prediction of individual genomic values, be it the predicted risk scores for complex traits in humans or the estimated genomic breeding values for complex traits in farm animals. I obtained by Bachelor degree in Animal Science and Range Management from the then Federal University of Technology, (now Modibbo Adama University of Technology), Yola, Nigeria. In 2014, I enrolled in the European Masters in Animal Breeding and Genetics (EM-ABG), Erasmus Mundus program. During the first year of my master program, I worked with Dr. Esther Ellen and Dr. Tessa Brinker on estimating direct and indirect genetic effects for survival time in crossbred laying hens, the results of which were subsequently published in the Journal of animal breeding and genetics. During the second year of the master program, I moved to the Swedish University of Agricultural Science, Upsala, were I worked with Prof. Dirk Jan De Koning and Dr. Anna Maria Johansson On GWAS for bone strength in laying hens. Results from the study are now published in the journal of animal science.</p>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">About Me</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Current Projects</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Presentation slides</a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>Contact</a>
+  </div>
+</div>
+
+
+<!-- Image header -->
+  <div class="w3-display-container w3-container w3-lime" style="height:250px;">
+    <!--<img src="images/dna.png" alt="Jeans" style="height:300px;width:100%"> -->
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">Welcome to my personal website!</h1>
+      <h1 class="w3-hide-large w3-hide-medium">Welcome to my personal website!</h1>
+      <h1 class="w3-hide-small">Biaty Raymond</h1>
+      <!--<p><a href="#jeans" class="w3-button w3-red w3-padding-large w3-large">SHOP NOW</a></p> -->
     </div>
-    
+  </div>
+  
+  
+  
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h3>My 6 months Sabbatical to the University of Queensland, Australia</h3>
+      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="images/uq.jpg" style="width:100%">
+      <img src="images/PCTG.png" style="width:100%">
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+    <img src="images/armidale.png" style="width:100%;height:250px">
+    <img src="images/unea.jpg" style="width:100%">
+  </div>
+
+    <div class="w3-twothird">
+      <h3>Potential for genomic selection in numerically small populations - my talk at the University of New England, Armidale, Australia </h3>
+      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
 
 
-<!--<img src="Biaty_Raymond.jpg" alt="Profile picture" width="300" height="300">
-<div style="background-color:white;color:black;padding:20px;">
-<h>PROFILE</h>
-<p>I am a quantitative geneticist, with special interest in the development of statistical models that efficiently utilise omics data in the prediction of individual genomic values, be it the predicted risk scores for complex traits in humans or the estimated genomic breeding values for complex traits in farm animals. I obtained by Bachelor degree in Animal Science and Range Management from the then Federal University of Technology, (now Modibbo Adama University of Technology), Yola, Nigeria. In 2014, I enrolled in the European Masters in Animal Breeding and Genetics (EM-ABG), Erasmus Mundus program. During the first year of my master program, I worked with Dr. Esther Ellen and Dr. Tessa Brinker on estimating direct and indirect genetic effects for survival time in crossbred laying hens, the results of which were subsequently published in the Journal of animal breeding and genetics. During the second year of the master program, I moved to the Swedish University of Agricultural Science, Upsala, were I worked with Prof. Dirk Jan De Koning and Dr. Anna Maria Johansson On GWAS for bone strength in laying hens. Results from the study are now published in the journal of animal science.</p>  
-</div> -->
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h3>How much of our work should the public know - hot debate at the QDG meeting last week </h3>
+      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="images/UNE.jpg" style="width:100%">
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Concept of the week: Genetic drift</h1>
+     <p class="w3-text-white"><i>"nothing more than the random fluctuations in allele frequencies that necessarily result from sampling finite numbers of gametes in each generation. The magnitude of such allele-frequency fluctuations increases with decreasing population size, and combined with the input of new alleles by mutation, the incessant stochasticity of the process ensures that populations will evolve even in the absence of selection"</i>   -  From Walsh and Lynch (2018)</p>
+ </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Designed by Biaty Raymond</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
 </body>
 </html>
